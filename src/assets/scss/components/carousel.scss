@@ -1,0 +1,48 @@
+@import '../global';
+
+.intro {
+  position: absolute;
+  height: 80vh;
+  display: flex;
+
+  &-area {
+    position: relative;
+    display: flex;
+    margin-right: 40%;
+    margin-left: 5%;
+    top: 25%;
+    height: 37%;
+
+    &__text {
+      color: $grayish-cyan;
+      font-weight: 700;
+      text-shadow: 0px 3px 4px $black;
+
+      a {
+        color: $moderate-cyan;
+      }
+    }
+  }
+
+  &-navigation {
+    position: absolute;
+    top: 40%;
+    color: $grayish-cyan;
+    width: 100%;
+    cursor: pointer;
+    
+    &__right{
+      position: absolute;
+      right: 3%;
+      font-size: 4em;
+      text-shadow: 0px 3px 4px $black;
+    }
+
+    &__left{
+      position: absolute;
+      left: 3%;
+      font-size: 4em;
+      text-shadow: 0px 3px 4px $black;
+    }
+  }
+}
