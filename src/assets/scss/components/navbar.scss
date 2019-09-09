@@ -1,0 +1,47 @@
+@import '../global';
+
+.navbar {
+  background: rgba(49, 46, 46, 0.6) !important;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  
+  &-items {
+    &__logo img {
+      top: 10%;
+      position: relative;
+      height: 40%;
+      left: 9%;
+    }
+    
+    &__list {
+      right: 10%;
+      position: relative;
+
+      li a {
+        color: $grayish-cyan !important;
+        background: none !important;
+        display: flex;
+        font-weight: 500;
+
+        &:hover {
+          color: $color-white !important;
+        }
+
+        &:active {
+          color: $color-white !important;
+        }
+      }
+    }
+  }
+}
+
+.sidenav {
+  background: $light-grey;
+  opacity: 0.9;
+
+  li a {
+    display: flex;
+    font-weight: 600;
+  }
+}
